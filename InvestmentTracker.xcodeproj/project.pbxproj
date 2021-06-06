@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,14 @@
 		0CE1599726653A2D00804C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CE1599526653A2D00804C49 /* LaunchScreen.storyboard */; };
 		0CE159A226653A2D00804C49 /* InvestmentTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159A126653A2D00804C49 /* InvestmentTrackerTests.swift */; };
 		0CE159AD26653A2D00804C49 /* InvestmentTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159AC26653A2D00804C49 /* InvestmentTrackerUITests.swift */; };
+		0CE159BB26653B4B00804C49 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159BA26653B4B00804C49 /* APICaller.swift */; };
+		0CE159BF2665439C00804C49 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159BE2665439C00804C49 /* CryptoTableViewCell.swift */; };
+		0CE159C12665459E00804C49 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159C02665459E00804C49 /* Models.swift */; };
+		0CE159C32667B89600804C49 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159C22667B89600804C49 /* Charts.swift */; };
+		0CE159C62667B90F00804C49 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE159C52667B90F00804C49 /* SwiftUICharts */; };
+		0CE159C82667E40A00804C49 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159C72667E40A00804C49 /* Portfolio.swift */; };
+		0CE159CB2667E56500804C49 /* Portfolio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159C92667E56500804C49 /* Portfolio.xcdatamodeld */; };
+		0CE159CD2667E7F100804C49 /* PortfolioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159CC2667E7F100804C49 /* PortfolioItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,13 @@
 		0CE159A826653A2D00804C49 /* InvestmentTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestmentTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE159AC26653A2D00804C49 /* InvestmentTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentTrackerUITests.swift; sourceTree = "<group>"; };
 		0CE159AE26653A2D00804C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CE159BA26653B4B00804C49 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		0CE159BE2665439C00804C49 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		0CE159C02665459E00804C49 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		0CE159C22667B89600804C49 /* Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts.swift; sourceTree = "<group>"; };
+		0CE159C72667E40A00804C49 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
+		0CE159CA2667E56500804C49 /* App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = App.xcdatamodel; sourceTree = "<group>"; };
+		0CE159CC2667E7F100804C49 /* PortfolioItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE159C62667B90F00804C49 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +122,13 @@
 				0CE1599326653A2D00804C49 /* Assets.xcassets */,
 				0CE1599526653A2D00804C49 /* LaunchScreen.storyboard */,
 				0CE1599826653A2D00804C49 /* Info.plist */,
+				0CE159BA26653B4B00804C49 /* APICaller.swift */,
+				0CE159BE2665439C00804C49 /* CryptoTableViewCell.swift */,
+				0CE159C02665459E00804C49 /* Models.swift */,
+				0CE159C22667B89600804C49 /* Charts.swift */,
+				0CE159C72667E40A00804C49 /* Portfolio.swift */,
+				0CE159C92667E56500804C49 /* Portfolio.xcdatamodeld */,
+				0CE159CC2667E7F100804C49 /* PortfolioItem.swift */,
 			);
 			path = InvestmentTracker;
 			sourceTree = "<group>";
@@ -144,6 +167,9 @@
 			dependencies = (
 			);
 			name = InvestmentTracker;
+			packageProductDependencies = (
+				0CE159C52667B90F00804C49 /* SwiftUICharts */,
+			);
 			productName = InvestmentTracker;
 			productReference = 0CE1598726653A2A00804C49 /* InvestmentTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +241,9 @@
 				Base,
 			);
 			mainGroup = 0CE1597E26653A2A00804C49;
+			packageReferences = (
+				0CE159C42667B90F00804C49 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = 0CE1598826653A2A00804C49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +288,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CE1598F26653A2A00804C49 /* ViewController.swift in Sources */,
+				0CE159CD2667E7F100804C49 /* PortfolioItem.swift in Sources */,
+				0CE159C82667E40A00804C49 /* Portfolio.swift in Sources */,
 				0CE1598B26653A2A00804C49 /* AppDelegate.swift in Sources */,
 				0CE1598D26653A2A00804C49 /* SceneDelegate.swift in Sources */,
+				0CE159C12665459E00804C49 /* Models.swift in Sources */,
+				0CE159C32667B89600804C49 /* Charts.swift in Sources */,
+				0CE159BF2665439C00804C49 /* CryptoTableViewCell.swift in Sources */,
+				0CE159CB2667E56500804C49 /* Portfolio.xcdatamodeld in Sources */,
+				0CE159BB26653B4B00804C49 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +629,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0CE159C42667B90F00804C49 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0CE159C52667B90F00804C49 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CE159C42667B90F00804C49 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		0CE159C92667E56500804C49 /* Portfolio.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0CE159CA2667E56500804C49 /* App.xcdatamodel */,
+			);
+			currentVersion = 0CE159CA2667E56500804C49 /* App.xcdatamodel */;
+			path = Portfolio.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0CE1597F26653A2A00804C49 /* Project object */;
 }
