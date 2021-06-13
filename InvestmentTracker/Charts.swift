@@ -21,8 +21,8 @@ class FetchedPortfolio {
             let dateCreated = results as! [PortfolioItem]
 
             for portfolioItem in dateCreated {
-                print(portfolioItem.worth)
-                portfolio.append(portfolioItem.worth as! Double)
+                print(portfolioItem.cost)
+                portfolio.append(portfolioItem.cost as! Double)
             }
             print(portfolio)
         }catch let err as NSError {

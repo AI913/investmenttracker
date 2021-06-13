@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C776996266FF56B003BA04A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 0C776995266FF56B003BA04A /* SwiftUICharts */; };
 		0CE1598B26653A2A00804C49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1598A26653A2A00804C49 /* AppDelegate.swift */; };
 		0CE1598D26653A2A00804C49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1598C26653A2A00804C49 /* SceneDelegate.swift */; };
 		0CE1598F26653A2A00804C49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1598E26653A2A00804C49 /* ViewController.swift */; };
@@ -19,7 +20,6 @@
 		0CE159BF2665439C00804C49 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159BE2665439C00804C49 /* CryptoTableViewCell.swift */; };
 		0CE159C12665459E00804C49 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159C02665459E00804C49 /* Models.swift */; };
 		0CE159C32667B89600804C49 /* Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159C22667B89600804C49 /* Charts.swift */; };
-		0CE159C62667B90F00804C49 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE159C52667B90F00804C49 /* SwiftUICharts */; };
 		0CE159C82667E40A00804C49 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159C72667E40A00804C49 /* Portfolio.swift */; };
 		0CE159CB2667E56500804C49 /* Portfolio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159C92667E56500804C49 /* Portfolio.xcdatamodeld */; };
 		0CE159CD2667E7F100804C49 /* PortfolioItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE159CC2667E7F100804C49 /* PortfolioItem.swift */; };
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CE159C62667B90F00804C49 /* SwiftUICharts in Frameworks */,
+				0C776996266FF56B003BA04A /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +92,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C776994266FF56B003BA04A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0CE1597E26653A2A00804C49 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +106,7 @@
 				0CE159A026653A2D00804C49 /* InvestmentTrackerTests */,
 				0CE159AB26653A2D00804C49 /* InvestmentTrackerUITests */,
 				0CE1598826653A2A00804C49 /* Products */,
+				0C776994266FF56B003BA04A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,7 +176,7 @@
 			);
 			name = InvestmentTracker;
 			packageProductDependencies = (
-				0CE159C52667B90F00804C49 /* SwiftUICharts */,
+				0C776995266FF56B003BA04A /* SwiftUICharts */,
 			);
 			productName = InvestmentTracker;
 			productReference = 0CE1598726653A2A00804C49 /* InvestmentTracker.app */;
@@ -642,7 +650,7 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0CE159C52667B90F00804C49 /* SwiftUICharts */ = {
+		0C776995266FF56B003BA04A /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0CE159C42667B90F00804C49 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;

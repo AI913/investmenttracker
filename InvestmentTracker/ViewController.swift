@@ -100,19 +100,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     {
         let frame: CGRect = tableView.frame
         
-        let portfolioBtn: UIButton = UIButton(frame: CGRect(x: frame.size.width - 200, y: 0, width: 150, height: 50)) //
-        portfolioBtn.setTitle("Done", for: .normal)
-        portfolioBtn.backgroundColor = .red
-        
+        let portfolioBtn: UIButton = UIButton(frame: CGRect(x: 0, y: 0, width: frame.width, height: 50)) //
+        portfolioBtn.setTitle("See your portfolio", for: .normal)
+        portfolioBtn.backgroundColor = .systemBackground
         portfolioBtn.addTarget(self, action: #selector(didTapPortoflio), for: .touchUpInside)
-        
-        portfolioBtn.backgroundColor = .blue
         
         let headerView: UIView = UIView(frame: CGRect(x: 0,
                                                       y: 0,
                                                       width: frame.size.width,
                                                       height: frame.size.height))
-        headerView.backgroundColor = .red
+        headerView.backgroundColor = .secondarySystemBackground
         headerView.addSubview(portfolioBtn)
         return headerView
     }
